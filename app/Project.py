@@ -8,6 +8,8 @@ app = FastAPI()
 origins = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
+    "http://localhost:27376",
+    "http://127.0.0.1:27376",
     "https://randomizer-service-mathieudj.cloud.okteto.net",
     "https://MathieuDJ.github.io",
     "https://mathieudj.github.io."
