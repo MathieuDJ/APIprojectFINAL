@@ -107,6 +107,6 @@ async def get_car(number: int = Query(default=2, le=len(mercedes), description="
 
 @app.post("/car/ferrari/")
 async def create_ferrari(ferrarie: Ferrari):
-    ferrari.append(ferrarie)
+    ferrari.append(ferrarie.dict())
     return ferrari
 
