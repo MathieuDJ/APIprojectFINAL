@@ -28,30 +28,30 @@ ferrari = [{'brand': 'ferrari',
             'horsepower': '789'},
 
            {'brand': 'ferrari',
-            'model': 'test1',
+            'model': '296GTB',
             'horsepower': '800'},
 
            {'brand': 'ferrari',
-            'model': 'test2',
-            'horsepower': '900'},
+            'model': 'SF90',
+            'horsepower': '910'},
 
            {'brand': 'ferrari',
-            'model': 'test4',
-            'horsepower': '900'},
+            'model': 'F8',
+            'horsepower': '754'},
 
            {'brand': 'ferrari',
-            'model': 'test5',
-            'horsepower': '900'},
-
-
-           {'brand': 'ferrari',
-            'model': 'test6',
+            'model': 'Monza SP1',
             'horsepower': '900'},
 
 
            {'brand': 'ferrari',
-            'model': 'test7',
-            'horsepower': '900'}
+            'model': '166 Inter',
+            'horsepower': '560'},
+
+
+           {'brand': 'ferrari',
+            'model': '348',
+            'horsepower': '780'}
            ]
 
 
@@ -60,32 +60,37 @@ mercedes = [{'brand': 'mercedes',
             'horsepower': '416'},
 
             {'brand': 'mercedes',
-             'model': 'G-501',
-             'horsepower': '416'},
+             'model': 'GLA',
+             'horsepower': '230'},
 
             {'brand': 'mercedes',
-             'model': 'G-502',
-             'horsepower': '416'},
+             'model': 'C-Class',
+             'horsepower': '354'},
 
             {'brand': 'mercedes',
-             'model': 'G-503',
-             'horsepower': '416'},
+             'model': 'GLS',
+             'horsepower': '280'},
 
             {'brand': 'mercedes',
-             'model': 'G-504',
-             'horsepower': '416'},
+             'model': 'AMG GT',
+             'horsepower': '680'},
 
             {'brand': 'mercedes',
-             'model': 'G-505',
-             'horsepower': '416'},
+             'model': 'AMG G63',
+             'horsepower': '516'},
 
             {'brand': 'mercedes',
-             'model': 'G-506',
+             'model': 'V-Class',
              'horsepower': '416'},]
 
 
 class Ferrari(BaseModel):
     brand: str = Query(default="ferrari")
+    model: str
+    horsepower: int
+
+class Mercedes(BaseModel):
+    brand: str = Query(default="mercedes")
     model: str
     horsepower: int
 
@@ -110,3 +115,7 @@ async def create_ferrari(ferrarie: Ferrari):
     ferrari.append(ferrarie.dict())
     return ferrari
 
+@app.post("/car/mercedes/")
+async def create_mercedes(mercedees: Mercedes):
+    mercedes.append(mercedees.dict())
+    return mercedes
