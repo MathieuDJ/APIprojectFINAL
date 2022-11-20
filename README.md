@@ -1,6 +1,6 @@
 # APIprojectFINAL
 ## Mathieu Du Jardin 2IoT
-###Gekozen thema
+* ###Gekozen thema
 >Mijn API draait rond auto's. Ik heb 2 merken (Ferrari en Mercedes) waarvan ik een aantal modellen heb. Stel je bent een auto-dealer die Mercedes en/of Ferrari verkoopt en je wilt inspiratie krijgen voor welke nieuwe auto's je aan je collectie kan toevoegen, kan je mijn API gebruiken. Mijn API kiest dan een aantal moddelen en laat ze zien.
 
 >Ik heb 2 GET-points, 1 voor Ferrari en 1 voor Mercedes. Ze doen eigenlijk hetzelfde maar dan voor verschillende merken. Ze laten je modellen van deze merken zien. Je kan de hoeveelheid ook kiezen.
