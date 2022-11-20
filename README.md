@@ -8,6 +8,7 @@
 
 >Mijn front-end heb ik niet af gekregen want ik blijf maar errors krijgen. Ik had vroeger moeten beginnen zodat ik aan de leerkracht hulp kon vragen. Ik heb hier veel tijd aan besteedt maar ik snap/vind niets dat mijn probleem oplost. Ik ga verder aan mijn front-end werken en het is de bedoeling dat je start vanuit een HomePage. Dan zie je 2 links staan: 1 voor ferrari en 1 voor mercedes. Als je op deze link klikt kan je voor dat merk een zelf bepaalde hoeveelheid modellen oproepen en/of toevoegen.
 
+* Links
 >HostedAPI: https://randomizer-service-mathieudj.cloud.okteto.net
 
 >HostedAPI ferrari: https://randomizer-service-mathieudj.cloud.okteto.net/car/ferrari/
