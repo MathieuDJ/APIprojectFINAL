@@ -90,12 +90,9 @@ class Ferrari(BaseModel):
     horsepower: int
 
 @app.get("/car/ferrari/") #mss met while loop
-async def get_car(number: int = Query(default=2, le=len(ferrari), description="This parameter is for determining how many ferrari's you want to see, the default value is 2")):
-    cars = []
-    for i in range(number):
-        new_car = ferrari[randint(0, len(ferrari) - 1)]
-        cars.append(new_car)
-    return {"ferrari's": cars}
+async def return_ferrari():
+    random_num = random.randint(0, len(ferrari)-1)
+    return ferrari[random_num]
 
 @app.get("/car/mercedes/")
 async def get_car(number: int = Query(default=2, le=len(mercedes), description="This parameter is for determining how many mercedes you want to see, the default value is 2")):
