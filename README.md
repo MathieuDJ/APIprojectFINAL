@@ -23,3 +23,9 @@
 
 *Screenshots:
 >Ferrari![image](https://user-images.githubusercontent.com/72858870/202921761-ee72c05b-5300-41e4-bded-90eb1975bbd1.png)
+>Ferrari met ?number=5 bv![image](https://user-images.githubusercontent.com/72858870/202921820-38e10305-e88e-48d9-b3c0-33e45d05ca11.png)
+>Mercedes![image](https://user-images.githubusercontent.com/72858870/202921826-af1f02f7-3f02-44bf-8132-9bdf2ff4f521.png)
+>Mercedes met ?number=4![image](https://user-images.githubusercontent.com/72858870/202921840-64750c6d-1765-485f-815d-bb145b831cd5.png)
+>POST![image](https://user-images.githubusercontent.com/72858870/202921914-eb1a7abf-42c0-47d6-801b-c47602c94527.png)
+
+
