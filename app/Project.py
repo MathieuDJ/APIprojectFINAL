@@ -1,8 +1,27 @@
 from fastapi import FastAPI, Query
 from random import randint
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://localhost:63342",
+    "http://127.0.0.1:63342",
+    "https://randomizer-service-mathieudj.cloud.okteto.net",
+    "https://MathieuDJ.github.io",
+    "https://MathieuDJ.github.io."
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 ferrari = [{'brand': 'ferrari',
             'model': '812',
